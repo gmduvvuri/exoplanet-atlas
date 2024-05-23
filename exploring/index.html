@@ -14,7 +14,7 @@
         <link rel="prev" href="../creating/">
       
       
-        <link rel="next" href="../visualizing/">
+        <link rel="next" href="../observing/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -420,6 +420,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../observing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Observing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filtering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filtering
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1113,12 +1155,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">exoatlas</span> <span class="k">as</span> <span class="nn">ea</span>
 
 <span class="n">ea</span><span class="o">.</span><span class="n">version</span><span class="p">()</span>
-<span class="kn">import</span> <span class="nn">astropy.units</span> <span class="k">as</span> <span class="nn">u</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-1">import exoatlas as ea
 
-ea.version()
-import astropy.units as u</div>
+ea.version()</div>
 </div>
 </div>
 </div>
@@ -1127,11 +1167,10 @@ import astropy.units as u</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>/Users/zach/Dropbox/zach/code/exoplanet-atlas/docs/exoatlas-downloads
-</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>'0.3.3'</pre>
 </div>
 </div>
 </div>
@@ -1220,7 +1259,7 @@ import astropy.units as u</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div><i>Table length=4214</i>
-<table class="table-striped table-bordered table-condensed" id="table4359343808">
+<table class="table-striped table-bordered table-condensed" id="table4785551216">
 <thead><tr><th>name</th><th>hostname</th><th>letter</th><th>gaia_id</th><th>number_of_stars</th><th>number_of_planets</th><th>discovery_method</th><th>discovery_year</th><th>discovery_reference</th><th>discovery_facility</th><th>ra</th><th>dec</th><th>pmra</th><th>pmdec</th><th>systemic_rv_upper_limit</th><th>systemic_rv</th><th>systemic_rv_uncertainty_upper</th><th>systemic_rv_uncertainty_lower</th><th>distance</th><th>distance_uncertainty_upper</th><th>distance_uncertainty_lower</th><th>detected_in_rv</th><th>detected_in_pulsar</th><th>detected_in_pulsation_timing</th><th>detected_in_transit</th><th>detected_in_astrometry</th><th>detected_in_orbital_brightness_modulations</th><th>detected_in_microlensing</th><th>detected_in_eclipse_timing_variations</th><th>detected_in_imaging</th><th>detected_in_disk_kinematics</th><th>is_controversial</th><th>shows_ttv</th><th>stellar_spectral_type</th><th>stellar_teff_upper_limit</th><th>stellar_teff</th><th>stellar_teff_uncertainty_upper</th><th>stellar_teff_uncertainty_lower</th><th>stellar_radius_upper_limit</th><th>stellar_radius</th><th>stellar_radius_uncertainty_upper</th><th>stellar_radius_uncertainty_lower</th><th>stellar_mass_lower_limit</th><th>stellar_mass_upper_limit</th><th>stellar_mass</th><th>stellar_mass_uncertainty_upper</th><th>stellar_mass_uncertainty_lower</th><th>stellar_age_lower_limit</th><th>stellar_age_upper_limit</th><th>stellar_age</th><th>stellar_age_uncertainty_upper</th><th>stellar_age_uncertainty_lower</th><th>stellar_metallicity_lower_limit</th><th>stellar_metallicity</th><th>stellar_metallicity_uncertainty_upper</th><th>stellar_metallicity_uncertainty_lower</th><th>stellar_luminosity_upper_limit</th><th>stellar_luminosity</th><th>stellar_luminosity_uncertainty_upper</th><th>stellar_luminosity_uncertainty_lower</th><th>stellar_logg_lower_limit</th><th>stellar_logg_upper_limit</th><th>stellar_logg</th><th>stellar_logg_uncertainty_upper</th><th>stellar_logg_uncertainty_lower</th><th>stellar_density</th><th>stellar_density_uncertainty_upper</th><th>stellar_density_uncertainty_lower</th><th>stellar_vsini_upper_limit</th><th>stellar_vsini</th><th>stellar_vsini_uncertainty_upper</th><th>stellar_vsini_uncertainty_lower</th><th>stellar_rotation_period_lower_limit</th><th>stellar_rotation_period_upper_limit</th><th>stellar_rotation_period</th><th>stellar_rotation_period_uncertainty_upper</th><th>stellar_rotation_period_uncertainty_lower</th><th>umag</th><th>umag_uncertainty_upper</th><th>umag_uncertainty_lower</th><th>gmag</th><th>gmag_uncertainty_upper</th><th>gmag_uncertainty_lower</th><th>rmag</th><th>rmag_uncertainty_upper</th><th>rmag_uncertainty_lower</th><th>imag</th><th>imag_uncertainty_upper</th><th>imag_uncertainty_lower</th><th>zmag</th><th>zmag_uncertainty_upper</th><th>zmag_uncertainty_lower</th><th>Vmag</th><th>Vmag_uncertainty_upper</th><th>Vmag_uncertainty_lower</th><th>Bmag</th><th>Bmag_uncertainty_upper</th><th>Bmag_uncertainty_lower</th><th>ICmag</th><th>ICmag_uncertainty_upper</th><th>ICmag_uncertainty_lower</th><th>Jmag</th><th>Jmag_uncertainty_upper</th><th>Jmag_uncertainty_lower</th><th>Hmag</th><th>Hmag_uncertainty_upper</th><th>Hmag_uncertainty_lower</th><th>Kmag</th><th>Kmag_uncertainty_upper</th><th>Kmag_uncertainty_lower</th><th>W1mag</th><th>W1mag_uncertainty_upper</th><th>W1mag_uncertainty_lower</th><th>W2mag</th><th>W2mag_uncertainty_upper</th><th>W2mag_uncertainty_lower</th><th>W3mag</th><th>W3mag_uncertainty_upper</th><th>W3mag_uncertainty_lower</th><th>W4mag</th><th>W4mag_uncertainty_upper</th><th>W4mag_uncertainty_lower</th><th>gaiamag</th><th>gaiamag_uncertainty_upper</th><th>gaiamag_uncertainty_lower</th><th>Tmag</th><th>Tmag_uncertainty_upper</th><th>Tmag_uncertainty_lower</th><th>kepmag</th><th>kepmag_uncertainty_upper</th><th>kepmag_uncertainty_lower</th><th>period_lower_limit</th><th>period_upper_limit</th><th>period</th><th>period_uncertainty_upper</th><th>period_uncertainty_lower</th><th>semimajoraxis_lower_limit</th><th>semimajoraxis</th><th>semimajoraxis_uncertainty_upper</th><th>semimajoraxis_uncertainty_lower</th><th>eccentricity_lower_limit</th><th>eccentricity_upper_limit</th><th>eccentricity</th><th>eccentricity_uncertainty_upper</th><th>eccentricity_uncertainty_lower</th><th>omega</th><th>omega_uncertainty_upper</th><th>omega_uncertainty_lower</th><th>inclination_lower_limit</th><th>inclination_upper_limit</th><th>inclination</th><th>inclination_uncertainty_upper</th><th>inclination_uncertainty_lower</th><th>radius_lower_limit</th><th>radius_upper_limit</th><th>radius</th><th>radius_uncertainty_upper</th><th>radius_uncertainty_lower</th><th>mass_lower_limit</th><th>mass_upper_limit</th><th>mass</th><th>mass_uncertainty_upper</th><th>mass_uncertainty_lower</th><th>msini_lower_limit</th><th>msini_upper_limit</th><th>msini</th><th>msini_uncertainty_upper</th><th>msini_uncertainty_lower</th><th>density_lower_limit</th><th>density_upper_limit</th><th>density</th><th>density_uncertainty_upper</th><th>density_uncertainty_lower</th><th>insolation</th><th>insolation_uncertainty_upper</th><th>insolation_uncertainty_lower</th><th>teq_upper_limit</th><th>teq</th><th>teq_uncertainty_upper</th><th>teq_uncertainty_lower</th><th>number_of_transmission_measurements</th><th>number_of_emission_measurements</th><th>transit_midpoint</th><th>transit_midpoint_uncertainty_upper</th><th>transit_midpoint_uncertainty_lower</th><th>transit_ar_lower_limit</th><th>transit_ar</th><th>transit_ar_uncertainty_upper</th><th>transit_ar_uncertainty_lower</th><th>transit_b_lower_limit</th><th>transit_b_upper_limit</th><th>transit_b</th><th>transit_b_uncertainty_upper</th><th>transit_b_uncertainty_lower</th><th>transit_depth_lower_limit</th><th>transit_depth</th><th>transit_depth_uncertainty_upper</th><th>transit_depth_uncertainty_lower</th><th>transit_duration</th><th>transit_duration_uncertainty_upper</th><th>transit_duration_uncertainty_lower</th><th>rv_semiamplitude_lower_limit</th><th>rv_semiamplitude_upper_limit</th><th>rv_semiamplitude</th><th>rv_semiamplitude_uncertainty_upper</th><th>rv_semiamplitude_uncertainty_lower</th><th>projected_obliquity_upper_limit</th><th>projected_obliquity</th><th>projected_obliquity_uncertainty_upper</th><th>projected_obliquity_uncertainty_lower</th><th>obliquity_lower_limit</th><th>obliquity_upper_limit</th><th>obliquity</th><th>obliquity_uncertainty_upper</th><th>obliquity_uncertainty_lower</th><th>default_parameter_set</th><th>tidyname</th><th>tidyhostname</th></tr></thead>
 <thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>deg</th><th>deg</th><th>mas / yr</th><th>mas / yr</th><th></th><th>km / s</th><th>km / s</th><th>km / s</th><th>pc</th><th>pc</th><th>pc</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>K</th><th>K</th><th>K</th><th></th><th>solRad</th><th>solRad</th><th>solRad</th><th></th><th></th><th>solMass</th><th>solMass</th><th>solMass</th><th></th><th></th><th>Gyr</th><th>Gyr</th><th>Gyr</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th>mag</th><th></th><th></th><th>d</th><th>d</th><th>d</th><th></th><th>AU</th><th>AU</th><th>AU</th><th></th><th></th><th></th><th></th><th></th><th>deg</th><th>deg</th><th>deg</th><th></th><th></th><th>deg</th><th>deg</th><th>deg</th><th></th><th></th><th>earthRad</th><th>earthRad</th><th>earthRad</th><th></th><th></th><th>earthMass</th><th>earthMass</th><th>earthMass</th><th></th><th></th><th>earthMass</th><th>earthMass</th><th>earthMass</th><th></th><th></th><th>g / cm3</th><th>g / cm3</th><th>g / cm3</th><th></th><th></th><th></th><th></th><th>K</th><th>K</th><th>K</th><th></th><th></th><th>d</th><th>d</th><th>d</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>h</th><th>h</th><th>h</th><th></th><th></th><th>m / s</th><th>m / s</th><th>m / s</th><th></th><th>deg</th><th>deg</th><th>deg</th><th></th><th></th><th>deg</th><th>deg</th><th>deg</th><th></th><th></th><th></th></tr></thead>
 <thead><tr><th>str29</th><th>str27</th><th>str1</th><th>object</th><th>int64</th><th>int64</th><th>str29</th><th>int64</th><th>str178</th><th>str60</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>int64</th><th>str16</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>int64</th><th>int64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>int64</th><th>str24</th><th>str22</th></tr></thead>
@@ -1874,10 +1913,14 @@ every_other_exoplanet</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">small</span> <span class="o">=</span> <span class="n">pop</span><span class="p">[</span><span class="n">pop</span><span class="o">.</span><span class="n">radius</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">Rearth</span><span class="p">]</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">astropy.units</span> <span class="k">as</span> <span class="nn">u</span>
+
+<span class="n">small</span> <span class="o">=</span> <span class="n">pop</span><span class="p">[</span><span class="n">pop</span><span class="o">.</span><span class="n">radius</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">Rearth</span><span class="p">]</span>
 <span class="n">small</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-16">small = pop[pop.radius &lt; 4 * u.Rearth]
+<div class="clipboard-copy-txt" id="cell-16">import astropy.units as u
+
+small = pop[pop.radius &lt; 4 * u.Rearth]
 small</div>
 </div>
 </div>
